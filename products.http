@@ -1,0 +1,46 @@
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{}
+
+###
+GET http://localhost:3001/products
+
+###
+POST http://localhost:3001/products
+Content-Type: application/json
+
+{
+  "name": "Mouse",
+  "price": "15.22"
+}
+###
+GET http://localhost:3001/products?page=1&limit=5
+
+###
+GET http://localhost:3001/products/5
+
+###
+PATCH http://localhost:3001/products/10
+Content-Type: application/json
+
+{
+  "name": "Tablet Samsung"
+}
+
+###
+DELETE http://localhost:3001/products/5
+
+###
+GET http://localhost:3000/api/products/00ac6026-10f7-42f8-8fc7-0fa5440b786
+
+###
+DELETE http://localhost:3000/api/products/89179d18-644c-4667-9d88-55ed82da8429
+###
+PATCH http://localhost:3000/api/products/f75f16b7-7a58-455d-8712-733eb363f9c8
+Content-Type: application/json
+
+{
+  "description": "Computer FOR INVESTIGATION"
+}
+
